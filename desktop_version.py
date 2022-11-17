@@ -4,7 +4,7 @@ import ssl
 import smtplib
 from tkinter import *
 root = Tk()
-root.title("Qr code Generator")
+root.title("Send Message Email")
 root.geometry('900x750')
 root.configure(background='#d9ffb3', bg="#59b300")
 
@@ -55,7 +55,7 @@ receiver_entry.pack(pady=10)
 
 label_password = Label(root, text="Password Sender:", background="#ccff99", font=('Helvetica', 16))
 label_password.pack(pady=10)
-password_entry = Entry(root, font=('Helvetica', 16), background="#ccff99", width=20)
+password_entry = Entry(root, font=('Helvetica', 16), background="#ccff99", width=20, show="*")
 password_entry.pack(pady=10)
 
 label_subject = Label(root, text="Subject: ", background="#ccff99", font=('Helvetica', 16))
